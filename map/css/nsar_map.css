@@ -1,0 +1,402 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #map {
+    height: 100%;
+    font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.lorem {
+    font-style: italic;
+    color: #AAA;
+}
+
+#filterform .radio-inline {
+    margin-bottom: 5px;
+}
+
+    #filterform .checkbox input[type=checkbox],
+    #filterform .checkbox-inline input[type=checkbox],
+    #filterform .radio input[type=radio],
+    #filterform .radio-inline input[type=radio] {
+        margin-top: 1px !important;
+    }
+
+
+/* TYPEAHEAD STYLES*/
+.typeahead {
+    background-color: #FFFFFF;
+}
+
+.tt-dropdown-menu {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 4px;
+    padding: 4px 0;
+    width: 100%;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.tt-suggestion {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 3px 10px;
+}
+
+    .tt-suggestion.tt-cursor {
+        background-color: #0097CF;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .tt-suggestion p {
+        margin: 0;
+    }
+
+    .tt-suggestion + .tt-suggestion {
+        border-top: 1px solid #ccc;
+    }
+
+.typeahead-header {
+    margin: 0 5px 5px 5px;
+    padding: 3px 0;
+    border-bottom: 2px solid #333;
+}
+
+.has-feedback .form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+
+/* NO RESULTS DIV */
+
+#noResultDiv {
+    background: rgba(0, 0, 0, 0.6) !important;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+    #noResultDiv h4, #noResultDiv h5 {
+        color: white !important;
+    }
+
+
+/* INFOBOX*/
+
+
+.infobox-wrapper {
+    display: none;
+}
+
+.infoBox {
+    width: 300px;
+}
+
+
+#infobox {
+    /*border: 1px solid #cacaca;*/
+    /*width:280px;*/
+    margin-top: 8px;
+    /*background: teal;*/
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: .5em 1em;
+    /*padding-right: 30px !important;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px !important;
+    /*text-shadow: 0 -1px #000000;*/
+    /*-webkit-box-shadow: 0 0 8px #000;*/
+    /*box-shadow: 0 0 8px #000;*/
+    max-height: 300px;
+    min-width: 290px;
+    padding-bottom:35px;
+}
+
+#infotitle{
+
+    margin-right:30px;
+    margin-bottom:18px;
+}
+#infocontent {
+    overflow-y: auto;
+    width: 278px;
+    max-height: 200px;
+    padding: 10px 0px 10px 10px;
+    background: white !important;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    /*border: 1px solid #b7b7b7;*/
+}
+
+#entitydetail, #entitymoredetail,#infocontent{
+    
+    font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+    color:#333;
+
+}
+
+#infotitle{
+    font: 11pt "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+    color:rgba(245, 245, 245, 1);
+
+}
+
+#entityMoreDetailBtn,#entityLessDetailBtn{
+    margin-right:10px
+
+}
+
+ #maplayerscontainer{
+    margin-top:10px;
+    margin-bottom:10px }
+
+#mapLayersBanner{
+    border-radius:5px;
+    margin-right:14px;
+    margin-left:15px;
+}
+
+#maplayersgroup h5{
+
+    float:right;
+    margin-right:10px;
+    color:#aaa;
+    font-style:italic;
+}
+
+.maplayersbtninput{
+    padding-top:5px;
+        }
+
+.maplayersbtninput .btn {
+border-radius: 0px;
+background-color: #f5f5f5;
+border-top-color: #ddd;
+border-bottom-color: #ddd;
+}
+
+
+.maplayersbtninput.btn-group-vertical > :first-child:not(:last-child).btn{
+        border-radius:0px;
+}
+
+.maplayersbtninput .btn:active, .maplayersbtninput .active.btn{
+        background-color: #ccc;
+}
+
+#controlboxlayername,#controlboxlayernotfound {
+
+    z-index:499;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:5px;
+    padding-top:10px;
+    padding-left:15px;
+}
+
+#floatingControl{
+    right:6px;
+    top:85px;
+    position:absolute;
+    z-index:499;
+    padding:0px 10px 10px 10px;
+    width:278px;
+}
+#alertcontainer{
+    background-color:rgba(255,255,255,1);
+    width:100%;
+    padding-bottom:10px;
+}
+.legend-wrapper{
+    background-color:rgba(255,255,255,1);
+    width:100%;
+    z-index:499;
+}
+
+.cdpcontrolbox-wrapper{
+    background-color:rgba(255,255,255,1);
+    width:100%;
+    z-index:499;
+    padding:5px
+}
+.cdpcontrolbox-content{
+    font:normal 12px arial,verdana;
+
+}
+.alertclosebtn.btn-danger,.cdpboxclosebtn.btn-danger {
+    width:20px !important;
+    height:20px !important;
+    border-color:none !important;
+    margin-top:5px;
+}
+
+/* MAP CONTROLS STYLE*/
+        .mapcontrols {
+            box-shadow:0px 1px 2px rgba(0,0,0,0.5);
+            z-index:1049;
+
+        }
+        .mapcontrols ul { 
+            clear: both;
+            margin: 0;
+            padding: 0;
+
+        }
+        .mapcontrols i:active{
+            background-color: lightgray;
+        }
+        .mapcontrols li { 
+            margin: 0;
+            padding: 0;
+            float: left; 
+            height:40px;
+            width: 40px;
+            list-style: none; 
+            border-top:1px solid #e5e5df;
+            border-collapse:collapse; 
+            background-color:white
+                       
+        }
+        .mapcontrols li:not(:last-child) {
+           border-right:1px solid #e5e5df;
+        }
+        .mapcontrols .columnOne #matrixcontrol{ width: 40px; 
+
+        }
+
+        .mapcontrols a,.mapcontrols i {
+            height:40px;
+            width:40px
+        }
+        .mapcontrols a{
+            color:#7F7F7F;
+        }
+        .mapcontrols i{
+            padding-top:12px;
+        }
+        .mapcontrols img{
+            padding-top:12px;
+        }
+
+
+/* ---------------------------------------------------------- */
+/*                    MEDIA QUERY                             */
+/* ---------------------------------------------------------- */
+
+@media only screen and (min-width : 240px) {
+    #logos, #logos li
+    {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width : 1030px) {
+    
+    .nav > li > a {
+        padding: 15px 15px;
+    }
+}
+
+@media only screen and (max-width : 790px){
+    #mapCoordinates{
+        top:auto !important;
+        bottom:18px;
+    }
+
+}
+@media only screen and (max-width : 1200px){
+    #alertcontainer{
+        display:none;
+    }
+    #horizontalcontrol{
+        display:block;
+        bottom:150px;
+        right:32px
+    }
+
+    #horizontalcontrol ul li:not(:first-child){
+        display:none;
+    }
+    
+}
+
+@media only screen and (min-width : 1200px){
+
+    #horizontalcontrol{
+        display:none;
+    }
+}
+/*max-width was 420*/
+@media only screen and (max-width : 599px) {
+
+    #horizontalcontrol{
+        bottom:40px;
+        right:73px;
+    }
+    #horizontalcontrol ul li:nth-child(n){
+        display:block;
+        right:40%
+
+    }
+    #alertcontainer{
+            width:100% !important;
+            height:100%;
+            right:0px !important;
+            top:50px !important;
+            
+            padding:0px;
+        }
+    .alertclosebtn {
+            display:block !important;
+        }
+    #alertsarrow{
+            display:none !important;
+        }
+    #header .separator {
+    height:20px;
+    }
+    .sidebar-pane{
+        padding:0px !important;
+    }
+    div[href='#notification'].collapsiblepanels {
+        border-radius:5px;
+        padding:6px;
+       
+        background-color:white;
+
+    }
+    #notification .btn-xs, #notification .btn-group-xs > .btn{
+       padding:0px 0px 0px 4px;
+
+   }
+}
+
+@media (orientation:portrait) and (max-width : 599px){
+
+    #QuickInfoDescBlock{
+        word-wrap: break-word;
+        width: 200px;
+    }
+
+    #modalQuickinfo:first-child{
+        width: 295px;
+    }
+
+}

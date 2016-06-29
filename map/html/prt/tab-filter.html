@@ -1,0 +1,54 @@
+﻿<div style="margin-top:15px">
+    <form class="form" role="search">
+        <div class="form-group has-feedback">
+            <input id="filtersearchbox" type="text" placeholder="Search" class="form-control">
+            <span id="filtersearchicon" class="fa fa-search form-control-feedback"></span>
+        </div>
+    </form>
+</div>
+
+<hr />
+
+<!--<form id="filterform" role="form" action="http://www.google.com">-->
+<div id="filterform">
+
+    <form id="agencyform" class="form-group">
+        <h5><strong>Which Side?</strong></h5>
+
+
+        <label class="checkbox-inline">
+            <input type="checkbox" name="agency" value="eastside" checked> East Side
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="agency" value="westside" checked> West Side
+        </label>
+
+    </form>
+    <hr />
+
+    <div>
+        <h5><strong>Filter 1</strong></h5>
+        <form id="tierform" class="form-group">
+            <label class="checkbox-inline">
+                <input type="checkbox" name="tier" id="tiercheckbox" value="Yes" checked> Yes
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="tier" id="tiercheckbox" value="No" checked> No
+            </label>
+        </form>
+    </div>
+    <!--<hr />-->
+    <!--<form id="bootstrapSelectForm" class="form-horizontal">
+        <h5><strong>Safety Level</strong></h5>
+
+        <div class="form-group">
+            <div class="col-xs-12 selectContainer">
+                <select id="safetylevels" name="safetylevels" class=" form-control" data-live-search="true" multiple title="Choose one or more...">
+                    <option value="All" selected>All</option>
+                </select>
+            </div>
+        </div>
+    </form>-->
+    <br />
+    <button id="filterbutton" type="button" class="btn btn-secondary btn-sm">Search</button>
+</div>

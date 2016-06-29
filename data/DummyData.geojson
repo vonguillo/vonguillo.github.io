@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "agency": "APHIS","tier1": "Yes","biosafetyLevel": "1","dataSource": "theater","NAME": "45th Street Theater", "TEL": "(212) 352-3101", "URL": "http:\/\/www.theatermania.com\/new-york\/theaters\/45th-street-theatre_2278\/", "ADDRESS1": "354 West 45th Street", "ADDRES2": null, "CITY": "New York", "ZIP": 10036.0 }, "geometry": { "type": "Point", "coordinates": [ -73.990618, 40.759851 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "agency": "APHIS","tier1": "No","biosafetyLevel": "2","dataSource": "theater","NAME": "47th Street Theater", "TEL": "(800) 775-1617", "URL": "http:\/\/www.bestofoffbroadway.com\/theaters\/47streettheatre.html", "ADDRESS1": "304 West 47th Street", "ADDRES2": null, "CITY": "New York", "ZIP": 10036.0 }, "geometry": { "type": "Point", "coordinates": [ -73.988106, 40.760471 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "agency": "APHIS","tier1": "Yes","biosafetyLevel": "3","dataSource": "theater", "NAME": "59E59", "TEL": "(212) 753-5959", "URL": "http:\/\/www.59e59.org\/", "ADDRESS1": "59 East 59th Street", "ADDRES2": null, "CITY": "New York", "ZIP": 10022.0 }, "geometry": { "type": "Point", "coordinates": [ -73.970385, 40.763399 ] } }
+,
+{ "type": "Feature", "id": 32, "properties": { "agency": "CDC","tier1": "No","biosafetyLevel": "4","dataSource": "museum", "NAME": "Alexander Hamilton U.S. Custom House", "TEL": "(212) 514-3700", "URL": "http:\/\/www.oldnycustomhouse.gov\/", "ADDRESS1": "1 Bowling Grn", "ADDRESS2": null, "CITY": "New York", "ZIP": 10004.0 }, "geometry": { "type": "Point", "coordinates": [ -74.013756, 40.703817 ] } }
+,
+{ "type": "Feature", "id": 34, "properties": {"agency": "CDC","tier1": "Yes","biosafetyLevel": "2","dataSource": "museum", "NAME": "Frick Collection", "TEL": "(212) 288-0700", "URL": "http:\/\/www.frick.org\/", "ADDRESS1": "1 E. 70th Street", "ADDRESS2": null, "CITY": "New York", "ZIP": 10021.0 }, "geometry": { "type": "Point", "coordinates": [ -73.96708, 40.771055 ] } }
+,
+{ "type": "Feature", "id": 99, "properties": {"agency": "CDC","tier1": "No","biosafetyLevel": "4","dataSource": "museum", "NAME": "Rubin Museum of Art", "TEL": "(212) 620-5000", "URL": "http:\/\/www.rmanyc.org\/", "ADDRESS1": "150 West 17th Street", "ADDRESS2": null, "CITY": "New York", "ZIP": 10011.0 }, "geometry": { "type": "Point", "coordinates": [ -73.997792, 40.740021 ] } }
+]
+}

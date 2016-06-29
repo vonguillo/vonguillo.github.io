@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+    <style>
+
+    #weatherIframe{
+            border:none;
+            width: 100%;
+            height:100%
+        }
+    #consoleOutput{
+
+        border:groove
+
+
+    }
+
+    </style>
+
+</head>
+<body>
+    <script>
+        var lat = getUrlParameter('lat');
+        var lng = getUrlParameter('lng');
+
+
+        var weatherMapUrl = "http:\//www.wunderground.com/wundermap/?lat=" + lat + "&lon=" + lng + "&zoom=8&pin=Grass%20Range%2c%20MT&rad=1&wxsn=0&svr=0&cams=0&sat=0&riv=0&mm=0&hur=0";
+        var weatherDetailUrl = "http:\//www.wunderground.com/cgi-bin/findweather/hdfForecast?query=" + lat + "," + lng;
+        //var weatherDetailUrl = "http:\//forecast.io/#/f/" + lat + "," + lng;
+
+        var wHeight = $(window).height();
+
+       
+        /*
+        var weatherMapUrl = "http:\//www.wunderground.com/wundermap/?lat=" + lat + "&lon=" + lng + "&zoom=8&pin=Grass%20Range%2c%20MT&rad=1&wxsn=0&svr=0&cams=0&sat=0&riv=0&mm=0&hur=0";
+        var weatherDetailUrl = "http:\//www.wunderground.com/cgi-bin/findweather/hdfForecast?query=" + lat + "," + lng;
+        
+        var weatherMapUrl = "http:\//www.wunderground.com/wundermap/?lat=40&lon=-80&zoom=8&pin=Grass%20Range%2c%20MT&rad=1&wxsn=0&svr=0&cams=0&sat=0&riv=0&mm=0&hur=0";
+        var weatherDetailUrl = "http:\//www.wunderground.com/cgi-bin/findweather/hdfForecast?query=40,-80";
+        */
+        
+
+        //console.log(weatherMapUrl);
+        //console.log(weatherDetailUrl);
+
+        $(document).ready(function () {
+
+
+
+            console.log("===========================================   HEIGHT: "+ wHeight);
+
+            $('#weatherIframe').css({ 'height': wHeight + "px", 'margin-top': -155 + "px" });
+            
+
+            $('#weatherIframe').attr("src", weatherDetailUrl);  
+
+    });
+
+    function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    };
+
+    function getInfoDetail() {
+
+        $('#weatherIframe').css({
+            'margin-top': -205 + "px"
+        });
+
+        $('#weatherIframe').attr("src", weatherDetailUrl);
+
+
+
+
+    }
+
+    function getMapDetail() {
+
+        $('#weatherIframe').attr("src", weatherMapUrl);
+
+        $('#weatherIframe').css({
+            'margin-top': -50 + "px"
+        });
+    }
+
+    </script>
+    <div>
+        <!--<div id="consoleOutput"></div>-->
+        <button onclick="getInfoDetail()" id="infoButton">Info Detail</button>
+        <button onclick="getMapDetail()" id="mapButton">Map Detail</button>
+        <!--<iframe src="" id="weatherIframe"></iframe>-->
+        <div style="border: solid; overflow: hidden">
+            <iframe src="" id="weatherIframe" scrolling="yes"></iframe>
+        </div>
+    </div>
+    
+
+</body>
+</html>

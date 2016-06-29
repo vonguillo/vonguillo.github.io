@@ -1,0 +1,200 @@
+﻿<html>
+<body>
+    <div id="mapLayersBanner" style="background-color: #e6e6e6 !important;">
+
+        <table style="width:100%">
+            <tr>
+                <td align="left" style="padding-left: 10px;padding-bottom: 10px;"><span id="lblNotificationText" style="background:inherit; font-size:12px ! important;"></span></td>
+                <td align="right"><input id="disclaimerBtn" type="button" style="border-style:none; width: 3em;  height: 3em;margin-left:5px;border-radius: 12px;-moz-border-radius: 12px;-webkit-border-radius: 12px;font:normal 10px arial,verdana;color:white;text-align:center;background:#808080" value="GO" onclick="rsgislayer.disclaimerBtn_click()" /></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="maplayerscontainer" class="container col-sm-12">
+
+        <div class="panel-group" id="maplayersgroup">
+            <div class="panel panel-default">
+                <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset1">
+                    <h4 class="panel-title">
+                        Filter By <b>View</b>
+                        <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                    </h4>
+                </div>
+                <div id="maplayerset1" class="panel-collapse collapse">
+                    <div>TESTING</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset2">
+                    <h4 class="panel-title">
+                        Filter By <b>Legend</b>
+                        <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                    </h4>
+                </div>
+                <div id="maplayerset2" class="panel-collapse collapse">
+                    <div>TESTING</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset3">
+                    <h4 class="panel-title">
+                        Filter By <b>Tier</b>
+                        <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                    </h4>
+                </div>
+                <div id="maplayerset3" class="panel-collapse collapse">
+                    <div>TESTING</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset4">
+                    <h4 class="panel-title">
+                        Filter By <b>History</b>
+                        <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                    </h4>
+                </div>
+                <div id="maplayerset4" class="panel-collapse collapse">
+                    <div>TESTING</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset5">
+                    <h4 class="panel-title">
+                        Filter By <b>History</b>
+                        <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                    </h4>
+                </div>
+                <div id="maplayerset5" class="panel-collapse collapse">
+                    <div>TESTING</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset6">
+                    <h4 class="panel-title">
+                        Filter By <b>History</b>
+                        <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                    </h4>
+                </div>
+                <div id="maplayerset6" class="panel-collapse collapse">
+                    <div>TESTING</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset7">
+                    <h4 class="panel-title">
+                        Filter By <b>History</b>
+                        <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                    </h4>
+                </div>
+                <div id="maplayerset7" class="panel-collapse collapse">
+                    <div>TESTING</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset8">
+                    <h4 class="panel-title">
+                        Filter By <b>History</b>
+                        <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                    </h4>
+                </div>
+                <div id="maplayerset8" class="panel-collapse collapse">
+                    <div>TESTING</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset9">
+                    <h4 class="panel-title">
+                        Filter By <b>History</b>
+                        <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                    </h4>
+                </div>
+                <div id="maplayerset9" class="panel-collapse collapse">
+                    <div>TESTING</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset10">
+                    <h4 class="panel-title">
+                        Filter By <b>FINAL</b>
+                        <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                    </h4>
+                </div>
+                <div id="maplayerset10" class="panel-collapse collapse">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            //var heightDiff = ($("#sidebar").height() - 130) - $("#maplayerscontainer").height();
+
+            //if (heightDiff < 0) {
+            //    var newHeight = $("#sidebar").height() - 130;
+            //    $("#maplayerscontainer").css("max-height", newHeight + "px !important");
+            //} else {
+            //    $("#maplayerscontainer").css("max-height", "auto");
+            //    $("#maplayerscontainer").css("overflow-y", "auto");
+            //}
+
+            rsgislayer.initGisDisplayStatus();
+            $("#censusCoverage").css("display", "none");
+            rsgislayer.initGisDisplayStatus();
+
+        });
+
+    </script>
+
+    <style>
+        #flatBtnCloseMapLayers {
+            background-color: #ff3333;
+            float: right;
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+
+        .customCloseBtn {
+            /*http:\//jsfiddle.net/zacharydl/4QezZ/*/
+            color: #fff;
+            background-image: linear-gradient(to bottom, #ff6666, #ffb3b3) !important;
+            height: 20px;
+            width: 20px;
+            float: right;
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+
+        #mapLayersBanner .k-button .k-icon {
+            float: left;
+            margin-left: -3px;
+        }
+
+        #globeimg {
+            width: 11px;
+            opacity: 0.6;
+            margin-right: 5px;
+            margin-top: 5px;
+            float: left;
+        }
+
+        #usflagimg {
+            width: 10px;
+            opacity: 0.8;
+            margin-right: 5px;
+            margin-top: 5px;
+            float: left;
+        }
+
+        #dialog {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 12px;
+            shape-margin: 5px;
+        }
+    </style>
+
+</body>
+
+</html>  

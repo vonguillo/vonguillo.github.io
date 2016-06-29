@@ -1,0 +1,220 @@
+﻿    <div id="maplayerscontent" style="margin-top:20px">
+        <div id="mapLayersBanner" style="background-color: #e6e6e6 !important;">
+
+            <table style="width:100%">
+                <tr>
+                    <td align="left" style="padding-left: 10px;padding-bottom: 10px;"><span id="lblNotificationText" style="background:inherit; font-size:12px ! important;"></span></td>
+                    <td align="right" style="padding-right: 5px;"><input id="disclaimerBtn" type="button" style="border-style:none; width: 3em;  height: 3em;margin-left:5px;border-radius: 12px;-moz-border-radius: 12px;-webkit-border-radius: 12px;font:normal 10px arial,verdana;color:white;text-align:center;background:#808080" value="GO" onclick="rsgislayer.disclaimerBtn_click()" /></td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="controlboxlayername" style="background-color:white; display: none"></div>
+        <div id="controlboxlayernotfound" style="background-color:white; display: none"><div style="float:left;margin-right:5px;margin-top:5px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:11px;color:#cc3300">No Data in Layers </div></div>
+        <div id="maplayerscontainer" class="container col-sm-12">
+
+            <div class="panel-group" id="maplayersgroup">
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset3">
+                        <h4 class="panel-title">
+                            <b>Incorporated Places</b>
+                            <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                        </h4>
+                    </div>
+                    <div id="maplayerset3" class="panel-collapse collapse">
+                        <div class="btn-group-vertical maplayersbtninput btn-block" data-toggle="buttons">
+                            <label class="btn">
+                                <input type="checkbox" name="incplaces" id="citytown" autocomplete="off"> Cities/Town
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="incplaces" id="munivillage" autocomplete="off"> Municipalities/Villages
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="incplaces" id="borrough" autocomplete="off"> Borroughs
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset4">
+                        <h4 class="panel-title">
+                            <b>DME</b>
+                            <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                        </h4>
+                    </div>
+                    <div id="maplayerset4" class="panel-collapse collapse">
+                        <div class="btn-group-vertical maplayersbtninput btn-block" data-toggle="buttons">
+                            <label class="btn">
+                                <input type="checkbox" name="dmequipment" id="dmestate" autocomplete="off"> State
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="dmequipment" id="dmecounty" autocomplete="off"> County
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="dmequipment" id="dmezipcode" autocomplete="off"> ZipCode
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset5">
+                        <h4 class="panel-title">
+                            <b>Medical/Emergency/Law</b>
+                            <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                        </h4>
+                    </div>
+                    <div id="maplayerset5" class="panel-collapse collapse">
+                        <div class="btn-group-vertical maplayersbtninput btn-block" data-toggle="buttons">
+                            <label class="btn">
+                                <input type="checkbox" name="emergencysrv" id="police" autocomplete="off"> Police
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="emergencysrv" id="hospital" autocomplete="off"> Hospital
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="emergencysrv" id="fire_station" autocomplete="off"> Firestations
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="emergencysrv" id="ambulance" autocomplete="off"> Ambulances
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="emergencysrv" id="airport" autocomplete="off"> Airports
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#demogmaplayerset">
+                        <h4 class="panel-title">
+                            <b>Demographics</b>
+                            <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                        </h4>
+                    </div>
+                    <div id="demogmaplayerset" class="panel-collapse collapse">
+                        <!--<div style="margin:10px 10px 0px 10px">
+                            <div class="k-content">
+                                <input id="selectcensus" style="width: 100%;" />
+                            </div>
+
+                        </div>-->
+
+                        <div class="btn-group-vertical maplayersbtninput btn-block" data-toggle="buttons">
+                            <label class="btn">
+                                <input type="checkbox" name="demographic" id="state" autocomplete="off"> State
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="demographic" id="county" autocomplete="off"> County
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="demographic" id="tract" autocomplete="off"> Tract
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset7">
+                        <h4 class="panel-title">
+                            <b>Hazards</b>
+                            <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                        </h4>
+                    </div>
+                    <div id="maplayerset7" class="panel-collapse collapse">
+                        <h5>Real Time Events</h5>
+                        <div class="btn-group-vertical maplayersbtninput btn-block" data-toggle="buttons">
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="hurricane" autocomplete="off"> Hurricanes
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="earthquake" autocomplete="off"> Earthquakes
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="flood" autocomplete="off"> Floods
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="floodriver" autocomplete="off"> River Floods
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="firepoint" autocomplete="off"> Fires(Point)
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="fireperimeter" autocomplete="off"> Fires(Perimeter)
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="usvolcano" autocomplete="off"> U.S. Volcanoes
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="othervolcano" autocomplete="off"> World Volcanoes
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="hail" autocomplete="off"> Hail Storm
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="tornado" autocomplete="off"> Tornado
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="wind" autocomplete="off"> Wind Storm
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="realtime" id="tornadopast" autocomplete="off"> Past Tornado
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset8">
+                        <h4 class="panel-title">
+                            <b>Weather</b>
+                            <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                        </h4>
+                    </div>
+                    <div id="maplayerset8" class="panel-collapse collapse">
+                        <div class="btn-group-vertical maplayersbtninput btn-block" data-toggle="buttons">
+                            <!--<label class="btn">
+                                <input type="checkbox" name="maplayeroptions" id="temperature" autocomplete="off"> Radio 1
+                            </label>-->
+                            <label class="btn">
+                                <input type="checkbox" name="weather" id="cloud" autocomplete="off"> Clouds
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="weather" id="precipitation" autocomplete="off"> Precipitation
+                            </label>
+                        </div>
+                        <h5>NWS Alerts</h5>
+                        <div class="btn-group-vertical maplayersbtninput btn-block" data-toggle="buttons">
+                            <label class="btn">
+                                <input type="checkbox" name="alerts" id="severe" autocomplete="off"> Severe
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="alerts" id="warning" autocomplete="off"> Warning
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="alerts" id="watch" autocomplete="off"> Watches
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="alerts" id="advisory" autocomplete="off"> Advisory
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsiblepanels" data-toggle="collapse" data-parent="#maplayersgroup" href="#maplayerset9">
+                        <h4 class="panel-title">
+                            <b>Critical Infrastructure</b>
+                            <i class="fa fa-sort-asc pull-right" aria-hidden="true"></i>
+                        </h4>
+                    </div>
+                    <div id="maplayerset9" class="panel-collapse collapse">
+                        <div class="btn-group-vertical maplayersbtninput btn-block" data-toggle="buttons">
+                            <label class="btn">
+                                <input type="checkbox" name="criticalinfrastructure" id="shelter" autocomplete="off"> Shelters
+                            </label>
+                            <label class="btn">
+                                <input type="checkbox" name="criticalinfrastructure" id="poweroutage_percent" autocomplete="off"> Power Outages
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,156 @@
+﻿<h5><b>Map Layers</b></h5>
+<div style="background-color: inherit !important;">
+    <table style="width:inherit">
+        <tr>
+            <td align="left"><span id="lblNotificationText" style="background:inherit; font-size:12px ! important;"></span></td>
+            <td align="right"><input id="disclaimerBtn" type="button" style="border-style:none; width: 3em;  height: 3em;margin-left:5px;border-radius: 12px;-moz-border-radius: 12px;-webkit-border-radius: 12px;font:normal 10px arial,verdana;color:white;text-align:center;background:#808080" value="GO" onclick="rsgislayer.disclaimerBtn_click()" /></td>
+        </tr>
+    </table>
+</div>
+<div>
+    <div style="float: left; width: 20%;padding-bottom:5px;font-family:Arial;font-size:10px;">
+        <fieldset>
+            <h5 style="margin-bottom:5px;margin-top:5px;font-family:Arial;font-size:13px;"><b>Hazards</b></h5>
+            <input style="margin-right:5px" type="checkbox" id="hurricane" name="hurricane" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="hurricanelabel"> Hurricanes</label><br />
+            <input style="margin-right:5px" type="checkbox" id="flood" name="flood" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="floodlabel"> Floods</label><br />
+            <input style="margin-right:5px" type="checkbox" id="floodriver" name="floodriver" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="floodriverlabel"> River Floods</label><br />
+            <input style="margin-right:5px" type="checkbox" id="firepoint" name="firepoint" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="firepointlabel"> Fires (Point)</label><br />
+            <input style="margin-right:5px" type="checkbox" id="fireperimeter" name="fireperimeter" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="fireperimeterlabel"> Fires (Area)</label><br />
+            <input style="margin-right:5px" type="checkbox" id="earthquake" name="earthquake" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="earthquakelabel"> Earthquakes</label><br />
+            <input style="margin-right:5px" type="checkbox" id="usvolcano" name="usvolcano" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="usvolcanolabel"> U.S. Volcanoes</label><br />
+            <input style="margin-right:5px" type="checkbox" id="othervolcano" name="othervolcano" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="othervolcanolabel"> World Volcanoes</label><br />
+        </fieldset>
+    </div>
+    <div style="float: left; width: 16%;padding-bottom:5px;font-family:Arial;font-size:10px;">
+        <fieldset>
+            <h5 style="margin-bottom:5px;margin-top:5px;font-family:Arial;font-size:13px;"><b>Weather</b></h5>
+            <input style="margin-right:5px" type="checkbox" id="temperature" name="temperature" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="temperaturelabel"> Temperature</label><br />
+            <input style="margin-right:5px" type="checkbox" id="cloud" name="cloud" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="cloudlabel"> Clouds</label><br />
+            <input style="margin-right:5px" type="checkbox" id="precipitation" name="precipitation" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="precipitationlabel"> Precipitation</label>
+            <hr style="margin-top: 0px !important; margin-bottom: 5px !important;margin-right:10px !important;color:gray !important;background-color:gray !important">
+            <input style="margin-right:5px" type="checkbox" id="severe" name="severe" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="severelabel"> Severe</label><br />
+            <input style="margin-right:5px" type="checkbox" id="warning" name="warning" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="warninglabel"> Warnings</label><br />
+            <input style="margin-right:5px" type="checkbox" id="watch" name="watch" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="watchlabel"> Watches</label><br />
+            <input style="margin-right:5px" type="checkbox" id="advisory" name="advisory" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="advisorylabel"> Advisory</label><br />
+            <!--<input type="checkbox" id="wind" name="wind" onchange="rsgislayer.onMonitoringGisLayers()" />Wind<br />-->
+        </fieldset>
+    </div>
+    <div style="float: left; width: 16%;padding-bottom:5px;font-family:Arial;font-size:10px;">
+        <fieldset>
+            <h5 style="margin-bottom:5px;margin-top:5px;font-family:Arial;font-size:13px;"><b>Infrastructure</b></h5>
+            <input style="margin-right:5px" type="checkbox" id="police" name="police" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="policelabel"> Police</label><br />
+            <input style="margin-right:5px" type="checkbox" id="fire_station" name="fire_station" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="fire_stationlabel"> Fire/EMS</label><br />
+            <input style="margin-right:5px" type="checkbox" id="ambulance" name="ambulance" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="ambulancelabel"> Ambulance</label><br />
+            <input style="margin-right:5px" type="checkbox" id="hospital" name="hospital" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="hospitallabel"> Hospital</label><br />
+            <input style="margin-right:5px" type="checkbox" id="airport" name="airport" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" /><label for="airportlabel"> Airports</label><br/>
+        </fieldset>
+    </div>
+    <div style="float: left; width: 16%;padding-bottom:5px;font-family:Arial;font-size:10px;">
+        <fieldset>
+            <h5 style="margin-bottom:5px;margin-top:5px;font-family:Arial;font-size:13px;"><b>Demographic</b></h5>
+            <input style="margin-right:5px" type="checkbox" id="sovi" name="sovi" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="sovilabel"> SVI</label><br />
+            
+            <!--<input style="margin-right:5px" type="checkbox" id="metrics" name="metrics" onchange="rsgislayer.getMetricsDialogue()" />
+            <label for="metricslabel"> METRICS</label><img src="map/Content/gislayers/globe_icon_b.png" id="globeimg" onchange="rsgislayer.toggleGisMenus()" /><br />
+            <div id="metricsCoverage">
+                <fieldset data-role="metricslevelgroup">
+                    <input checked type="radio" name="metricsLevel" value="country" onchange="rsgislayer.clearMetricsData()" /><label> Country</label><br />
+                    <input type="radio" name="metricsLevel" value="city" onchange="rsgislayer.clearMetricsData()" /><label> City</label><br />
+                </fieldset>
+            </div>-->
+            <input style="margin-right:5px" type="checkbox" id="uscensus" name="uscensus" onchange="rsgislayer.toggleGisMenus()" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="uscensuslabel"> U.S. Census</label><br />
+            <div id="censusCoverage">
+                <fieldset data-role="censuslevelgroup">
+                    <input checked type="radio" name="censusLevel" value="state" onchange="rsgislayer.clearCensusData()" /><label> State</label><br />
+                    <input type="radio" name="censusLevel" value="county" onchange="rsgislayer.clearCensusData()" /><label> County</label><br />
+                    <input type="radio" name="censusLevel" value="tract" onchange="rsgislayer.clearCensusData()" /><label> Tract</label><br/>
+              </fieldset>
+            </div>
+            
+        </fieldset>
+    </div>
+    <div style="float: left; width: 20%;padding-bottom:5px;font-family:Arial;font-size:10px;">
+        <fieldset>
+            <h5 style="margin-bottom:5px;margin-top:5px;font-family:Arial;font-size:13px;"><b>KMZ</b></h5>
+            <input style="margin-right:5px" type="checkbox" id="borders_kmz" name="borders_kmz" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="kmllabel">Border Crossings</label><br />
+            <!--<input style="margin-right:5px" type="checkbox" id="borders_kmz" name="borders_kmz" onchange="rsgislayer.getCheckboxName(this)" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="kmllabel">Border Crossings</label><br />-->
+            <input style="margin-right:5px" type="checkbox" id="eparegions_kmz" name="eparegions_kmz" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="kmzlabel"> EPA Regions</label><br/>
+            <!--<input style="margin-right:5px" type="checkbox" id="congressdistr_kmz" name="congressdistr_kmz" onchange="rsgislayer.getCheckboxName(this)" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="kmllabel"> Congressional Districts</label><br />
+            <input style="margin-right:5px" type="checkbox" id="habitat_kmz" name="habitat_kmz" onchange="rsgislayer.getCheckboxName(this)" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="kmzlabel"> Critical Habitat Designations</label><br/>-->
+            <h5 style="margin-bottom:5px;margin-top:5px;font-family:Arial;font-size:13px;"><b>KML</b></h5>
+            <input style="margin-right:5px" type="checkbox" id="airconditions_kml" name="airconditions_kml" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="kmzlabel"> Air Conditions</label><br/>
+            <input style="margin-right:5px" type="checkbox" id="usstates_kml" name="usstates_kml" onchange="rsgislayer.onMonitoringGisLayers('click')" />
+            <img src="map/Content/gislayers/usa-flag-icon-2.png" id="usflagimg" /><label for="kmzlabel"> US. States</label><br/>
+        </fieldset>
+    </div>
+
+</div>
+<script>
+
+    $(document).ready(function () {
+
+        rsgislayer.initGisDisplayStatus();
+        //$("#censusCoverage").css("visibility", "hidden");
+        $("#censusCoverage").css("display", "none");
+        rsgislayer.initGisDisplayStatus();
+        
+
+    })
+
+</script>
+
+<style>
+
+    #globeimg{
+        width:11px;
+        opacity:0.6;
+        margin-right:5px;
+        margin-top:5px;
+        float:left
+    }
+
+    #usflagimg{
+        width:10px;
+        opacity:0.8;
+        margin-right:5px;
+        margin-top:5px;
+        float:left
+    }
+
+    #dialog {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 12px;
+        shape-margin: 5px;
+    }
+
+</style>
+
+

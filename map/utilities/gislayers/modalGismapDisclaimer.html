@@ -1,0 +1,37 @@
+﻿<style>
+    .modal-dialog {
+        width: 550px;
+    }
+</style>
+
+<!--<div style="background-color: inherit !important;">
+    <table style="width:inherit">
+        <tr>
+            <td align="left"><span id="lblNotificationText" style="background:inherit;color: #343135 !important; font-size:12px ! important;"></span></td>
+            <td align="right"><input id="disclaimerBtn" type="button" style="border-style:none; width: 3em;  height: 3em;margin-left:5px;border-radius: 12px;-moz-border-radius: 12px;-webkit-border-radius: 12px;font:normal 10px arial,verdana;color:white;text-align:center;background:#808080" value="GO" /></td>
+        </tr>
+    </table>
+</div>-->
+
+<script>
+    $(document).ready(function () {
+        var obj = { color: "gray", html: "Data for certain layers is available at the Country, State, and City level", visibility: "hidden" };
+        fnDisclaimerBtn();
+    });
+
+    function fnDisclaimerBtn(obj){
+
+        $('#lblNotificationText').css("color", obj.color);
+        $('#lblNotificationText').html(obj.html);
+        $('#disclaimerBtn').prop('value', 'OK');
+        $('#disclaimerBtn').css("visibility", obj.visibility);
+
+    }
+
+    function disclaimerBtn_click() {
+
+        $('#lblNotificationText').css("color", grayColor + ' !important');
+        $('#lblNotificationText').html(disclaimerMain);
+        $('#disclaimerBtn').css("visibility", "hidden");
+    }
+</script>
