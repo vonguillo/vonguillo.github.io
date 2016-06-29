@@ -3,7 +3,7 @@
 
 var data = {
     "widget": {
-        "windowTitle": "NSAR360",
+        "windowTitle": "TEST WEB MAP",
         "upperSidebarTabs": [
             {
                 "href": "entities",
