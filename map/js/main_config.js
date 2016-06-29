@@ -52,7 +52,7 @@ var data = {
     }
 };
 
-$('head title').html("NSAR360");
+$('head title').html("WEBMAP TEST");
 
 var upperGroup = $("#sidebar .sidebar-tabs ul[role='tablist']")[0];
 
