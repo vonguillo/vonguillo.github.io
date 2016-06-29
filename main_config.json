@@ -1,0 +1,48 @@
+{"widget": {
+    "windowTitle": "NSAR360",
+    "upperSidebarTabs": [
+        {
+            "href": "entities",
+            "icon": "fa fa-bars",
+            "sidebarHeader": "Entities",
+            "sidebarContentPath": "map/html/prt/tab-entities.html",
+            "availability": ""
+        },
+        {
+            "href": "filter",
+            "icon": "fa fa-search",
+            "sidebarHeader": "Filter",
+            "sidebarContentPath": "map/html/prt/tab-filter.html",
+            "availability": ""
+
+        },
+         {
+            "href": "maplayers",
+            "icon": "fa fa-map-o",
+            "sidebarHeader": "Map Layers",
+            "sidebarContentPath": "map/html/prt/tab-maplayers.html",
+            "availability": ""
+
+        },
+
+        {
+            "href": "profile",
+            "icon": "fa fa-user",
+            "sidebarHeader": "Entities",
+            "sidebarContentPath": "map/html/prt/tab-profile.html",
+            "availability": "class='disabled'"
+        }
+    ],
+    "lowerSidebarTabs": [
+
+        {
+            "href": "settings",
+            "icon": "fa fa-cog",
+            "sidebarHeader": "Settings",
+            "sidebarContentPath": "map/html/prt/tab-settings.html",
+            "availability": ""
+        }
+
+    ]
+
+}}  
