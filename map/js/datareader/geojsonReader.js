@@ -747,10 +747,10 @@ function getLayerSymbol(type) {
 function getLayerIcon(type) {
 
     switch (type) {
-        case 'APHIS': path = '/360/map/icons/aphis.png';
+        case 'APHIS': path = '/map/icons/gislayers/flood.png';
             return path;
             break;
-        case 'CDC': path = '/360/map/icons/CDC.png';
+        case 'CDC': path = '/map/icons/gislayers/tornado.png';
             return path;
             break;
         default:
