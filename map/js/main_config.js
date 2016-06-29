@@ -54,9 +54,9 @@ var data = {
 
 $('head title').html("WEBMAP TEST");
 
-var upperGroup = $("#sidebar .sidebar-tabs ul[role='tablist']")[0];
+var upperGroup = $("#sidebar .sidebar-tabs").find("ul[role='tablist']")[0];
 
-var lowerGroup = $("#sidebar .sidebar-tabs ul[role='tablist'")[1];
+var lowerGroup = $("#sidebar .sidebar-tabs").find("ul[role='tablist'")[1];
 
 
 function getWebsiteParameters() {
