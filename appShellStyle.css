@@ -5,6 +5,7 @@
 
 main{
     top:51px;
+    overflow:hidden;
 }
 
 #leftSidebar{
