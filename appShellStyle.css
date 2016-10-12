@@ -1,11 +1,10 @@
-﻿html, body ,main
+html, body ,main
 {
     height: 100%;
-
 }
-
 main{
     top:51px;
+    overflow:hidden;
 }
 
 #leftSidebar{
@@ -45,6 +44,7 @@ main{
 
 #mapContent
 {
+    position: fixed;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -55,6 +55,7 @@ main{
 
 #mapDiv
 {
+    position:static !important;
     width: 100%;
     height: 100%;
     margin: 0;
