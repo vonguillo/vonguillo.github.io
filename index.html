@@ -114,23 +114,9 @@
                     Layout();
                 });
             
-            $('body').on('touchstart', function (event) {
-
-                var imgElement = this;
-
-                timeoutId = setTimeout(function () {
-
-                    $(imgElement).one('click', function (event) {
-                        event.preventDefault();
-                    });
-
-                    alert('gfasdfk');
-
-                }, 1000);
-
-            }).on('touchend touchcancel', function (event) {
-                clearTimeout(timeoutId);
-            });
+            document.body.addEventListener('touchmove',function(event){
+                event.preventDefault();   
+            },false);
         });
 
 
