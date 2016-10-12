@@ -1,11 +1,12 @@
 ﻿html, body ,main
 {
     height: 100%;
+    overflow:hidden;
+
 }
 
 main{
     top:51px;
-    overflow:hidden;
 }
 
 #leftSidebar{
