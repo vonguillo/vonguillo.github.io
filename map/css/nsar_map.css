@@ -385,9 +385,7 @@ border-bottom-color: #ddd;
     #notification .btn-xs, #notification .btn-group-xs > .btn{
        padding:0px 0px 0px 4px;
    }
-    #filtercont{
-        margin-left:5px;    
-    }
+
 }
 
 @media (orientation:portrait) and (max-width : 599px){
@@ -399,6 +397,10 @@ border-bottom-color: #ddd;
 
     #modalQuickinfo:first-child{
         width: 295px;
+    }
+        #filtercontainer{
+        margin-left:5px; 
+        margin-right:5px;    
     }
 
 }
