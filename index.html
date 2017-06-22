@@ -1,0 +1,24 @@
+﻿<html>
+<body>
+    <div id="reportContainer"></div>
+    <script src="powerbi.min.js"></script>
+    <script>
+        (function () {
+            var embedToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXIiOiIwLjIuMCIsImF1ZCI6Imh0dHBzOi8vYW5hbHlzaXMud2luZG93cy5uZXQvcG93ZXJiaS9hcGkiLCJpc3MiOiJQb3dlciBCSSBOb2RlIFNESyIsInR5cGUiOiJlbWJlZCIsIndjbiI6Imdtb2J1c3Rvc1Bvd2VyQkkiLCJ3aWQiOiI0Njc4ODdiMi0yM2EyLTQ2ZmQtOTAwOC1mYjVmNzlhMDZkN2YiLCJyaWQiOiIyYTkzYjMyYS1kNzk4LTQ5NGYtYjk1OC00YjkxOTliMzJmMmUiLCJuYmYiOjE0OTgwOTU2MDYsImV4cCI6MTQ5ODA5OTIwNn0.jb-cGfIxFeZzrjWBkGitIC4t8WEe0m-DJM-mtJJoBrM';
+            var reportId = '2a93b32a-d798-494f-b958-4b9199b32f2e';
+            var embedUrl = 'https://embedded.powerbi.com/appTokenReportEmbed?reportId=' + reportId;
+            var config = {
+                type: 'report',
+                accessToken: embedToken,
+                embedUrl: embedUrl,
+                id: reportId,
+                settings: {
+                    filterPaneEnabled: false,
+                    navContentPaneEnabled: false
+                }
+            };
+            powerbi.embed(document.getElementById('reportContainer'), config);
+        })();
+    </script>
+</body>
+</html>
